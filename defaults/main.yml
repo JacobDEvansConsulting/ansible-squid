@@ -1,0 +1,10 @@
+---
+
+squid_users:
+  - user: example
+    passwd: password
+
+ssl_cert_path: /etc/letsencrypt/live/{{ ansible_fqdn }}/fullchain.pem 
+ssl_key_path: /etc/letsencrypt/live/{{ ansible_fqdn }}/privkey.pem
+
+...
